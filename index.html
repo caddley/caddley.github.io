@@ -2,9 +2,9 @@
 <html lang="en">
 <title>Christine Addley - Caning and rushwork specialist.</title>
 <meta charset="UTF-8">
+<meta name="keywords" content="Seating,Caning,Woven cane,Rushwork,Rushing,Upholstery,Chair,Classes,Teaching">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="./w3css/4/w3.css">
-<!--link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"-->
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -64,9 +64,9 @@ body, html {
     <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
     <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PORTFOLIO</a>
     <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
-    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
+    <!--<a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
       <i class="fa fa-search"></i>
-    </a>
+		</a>-->
   </div>
 
   <!-- Navbar on small screens -->
@@ -74,15 +74,17 @@ body, html {
     <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
     <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
     <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
-    <a href="#" class="w3-bar-item w3-button">SEARCH</a>
+		<!--<a href="#" class="w3-bar-item w3-button">SEARCH</a>-->
   </div>
 </div>
 
 <!-- First Parallax Image with Logo Text -->
 <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
   <div class="w3-display-middle" style="white-space:nowrap;">
-		<span class="w3-center w3-padding-large w3-serif w3-black w3-xlarge w3-wide w3-animate-opacity">Christine Addley 		
-		<span class="w3-hide-small"> : Caning and rushwork specialist </span>
+		<span class="w3-center w3-padding-large w3-serif w3-black w3-xlarge w3-wide w3-animate-opacity">
+		<span >Christine </span> 
+		<span >Addley</span>
+		<span class=" w3-hide-small"> : Caning and rushwork specialist </span>
 		</span>
   </div>
 
@@ -244,7 +246,7 @@ body, html {
 
 		<div id="id06" class="w3-modal">
 			<div class="w3-modal-content">
-				<div class="w3-container w3-black ">
+				<div class="w3-container w3-black  w3-padding-16 ">
 				<span onclick="document.getElementById('id06').style.display='none'" class="w3-button w3-display-topright">&times;</span>
 				<img  src="./images/rush_stool.jpg"  style="width:100%" alt="picture" >
 				<p>Rushwork child's stool.</p>
@@ -260,10 +262,10 @@ body, html {
 
 		<div id="id07" class="w3-modal">
 			<div class="w3-modal-content">
-				<div class="w3-container w3-black ">
+				<div class="w3-container w3-black  w3-padding-16 ">
 				<span onclick="document.getElementById('id07').style.display='none'" class="w3-button w3-display-topright">&times;</span>
-				<img src="./images/caned_footstool.jpg"  style="width:100%" alt="picture" >
-				<p>Woven caning on foot stool.</p>
+				<img src="./images/danish_cord_chair.jpg"  style="width:100%" alt="picture" >
+				<p>Danish cord chair.</p>
 				</div>
 			</div>
 		</div>
@@ -276,10 +278,10 @@ body, html {
 
 		<div id="id08" class="w3-modal">
 			<div class="w3-modal-content">
-				<div class="w3-container w3-black ">
+				<div class="w3-container w3-black  w3-padding-16 ">
 				<span onclick="document.getElementById('id08').style.display='none'" class="w3-button w3-display-topright">&times;</span>
-				<img src="./images/caned_footstool.jpg"  style="width:100%" alt="picture" >
-				<p>Woven caning on foot stool.</p>
+				<img src="./images/medallion.jpg"  style="width:100%" alt="picture" >
+				<p>Caned chair with medallion.</p>
 				</div>
 			</div>
 		</div>
@@ -302,9 +304,6 @@ body, html {
   <p class="w3-center"><em>I do most of my work at my Ryedale workshop in Leavening, North Yorkshire.</em></p>
  
   <div class="w3-row w3-padding-32 w3-section">
- <!--   <div class="w3-col m4 w3-container">
-      <div id="googleMap" class="w3-round-large w3-greyscale" style="width:100%;height:400px;"></div>
- </div>-->
     <div class="w3-col m8 w3-panel">
       <div class="w3-large w3-margin-bottom">
         <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Leavening, North Yorkshire, UK<br>
@@ -321,7 +320,7 @@ body, html {
             <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
           </div>
         </div>
-        <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+				<textarea  class="w3-input w3-border" name="message" placeholder="Your message"></textarea>
         <button class="w3-button w3-black w3-right w3-section" type="submit">
           <i class="fa fa-paper-plane"></i> SEND MESSAGE
         </button>
@@ -333,35 +332,11 @@ body, html {
 <!-- Footer -->
 <footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
   <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
-  <div class="w3-xlarge w3-section">
-    <i class="fa fa-facebook-official w3-hover-opacity"></i>
-    <i class="fa fa-instagram w3-hover-opacity"></i>
-    <i class="fa fa-snapchat w3-hover-opacity"></i>
-    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-    <i class="fa fa-twitter w3-hover-opacity"></i>
-    <i class="fa fa-linkedin w3-hover-opacity"></i>
-  </div>
-  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+    <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
 </footer>
  
 <!-- Add Google Maps -->
 <script>
-function myMap()
-{
-  myCenter=new google.maps.LatLng(41.878114, -87.629798);
-  var mapOptions= {
-    center:myCenter,
-    zoom:12, scrollwheel: false, draggable: false,
-    mapTypeId:google.maps.MapTypeId.ROADMAP
-  };
-  var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
-
-  var marker = new google.maps.Marker({
-    position: myCenter,
-  });
-  marker.setMap(map);
-}
-
 // Modal Image Gallery
 function onClick(element) {
   document.getElementById("img01").src = element.src;
@@ -391,11 +366,6 @@ function toggleFunction() {
     }
 }
 </script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
-<!--
-To use this code on your website, get a free API key from Google.
-Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
--->
 
 </body>
 </html>
