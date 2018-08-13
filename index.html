@@ -102,7 +102,6 @@
 			</p>
 		<div class="w3-row">
 			<div class="w3-col m6 w3-center w3-padding-large">
-				<!-- <p><b><i class="fa fa-user w3-margin-right"></i>Christine</b></p><br>-->
 				<img src="./images/christine.jpg" class="w3-round w3-image" alt="Photo of Me" width="500" height="333">
 			</div>
 
@@ -114,31 +113,68 @@
 			</div>
 		</div>
 		<h3 class="w3-center">SERVICES</h3>
+		<p class="w3-center"><em>Click on an item for more information</em></p>	
 		
-		<div class="w3-padding-large w3-margin">
-		<ul class="w3-ul w3-half">
-				<li>Caning</li>
-				<li>Rushwork</li>
-				<li>Seagrass</li>
-				<li>Danish cord</li>
-				<li>Upholstery</li>
-		</ul>
-	<ul class="w3-ul w3-half">
-				<li>Wood turning</li>
-				<li>Restorations</li>
-				<li>Training classes</li>
-				<li>Presentations</li>
-				<li>Live demonstrations</li>
-		</ul>
-		</div>
+		<div class="w3-display-container">
 			
-		<div class="w3-hide-small w3-padding-large">
-			<p>Teaching: A regular class once a week for all abilities. Demonstrations given at shows, large and small. Talks given to groups.
+			<p class="w3-half w3-padding-small w3-hover-black" onclick="accordion('caninginfo')" >
+			Caning
+					<div id="caninginfo" class="w3-container w3-hide">
+								<p>Some text..</p>
+					</div>
+			</p>
+			
+			<p class="w3-half w3-padding-small w3-hover-black" onclick="accordion('rushinfo')">
+			Rushwork
+					<div id="rushinfo" class="w3-container w3-hide">
+								<p>Some text..</p>
+					</div>
+			</p>
+			
+			<p class="w3-half w3-padding-small w3-hover-black" onclick="accordion('seagrassinfo')">
+			Seagrass
+					<div id="seagrassinfo" class="w3-container w3-hide">
+								<p>Some text..</p>
+					</div>
+	
+			</p>
+			
+			<p class="w3-half w3-padding-small w3-hover-black" onclick="accordion('danishinfo')">
+			Danish cord
+							<div id="danishinfo" class="w3-container w3-hide">
+								<p>Some text..</p>
+					</div>
+		
+			</p>
+			
+			<p class="w3-half w3-padding-small w3-hover-black" onclick="accordion('upholsterinfo')">Upholstery
+							<div id="upholsterinfo" class="w3-container w3-hide">
+								<p>Some text..</p>
+					</div>
+		</p>
+			
+			<p class="w3-half w3-padding-small w3-hover-black" onclick="accordion('tuitioninfo')" >
+			Tuition
+				<div id="tuitioninfo" class="w3-container w3-hide">
+					<p>Teaching: A regular class once a week for all abilities. Demonstrations given at shows, large and small. Talks given to groups.
 					</p>
-			</div>
+				</div>
+			</p>
+			
+			<p class="w3-half w3-padding-small w3-hover-black" onclick="accordion('presentinfo')">	Presentations
+							<div id="presentinfo" class="w3-container w3-hide">
+								<p>Some text..</p>
+					</div>
+		</p> 
+			
+			<p class="w3-half w3-padding-small w3-hover-black" onclick="accordion('demoinfo')">	Live demonstrations
+				<div id="demoinfo" class="w3-container w3-hide">
+								<p>Some text..</p>
+				</div>
+		</p>
 		
-		
-		</div>
+		</div>	
+	</div>
 
 	<!-- Second Parallax Image with Portfolio Text -->
 	<div class="bgimg-2 w3-display-container w3-opacity-min">
@@ -198,7 +234,7 @@
 					<div class="w3-container w3-black w3-padding-16 ">
 					<span onclick="document.getElementById('id03').style.display='none'" class="w3-button w3-display-topright">&times;</span>
 					<img src="./images/fireguard.jpg"  style="width:100%" alt="picture">
-					<p>Woven cane fireguard.</p>
+					<p>Woven cane firescreen.</p>
 					</div>
 				</div>
 			</div>
@@ -310,10 +346,10 @@
 				<div class="w3-large w3-margin-bottom">
 					<i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Leavening, North Yorkshire, UK<br>
 					<i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: 01653 658560<br>
-					<i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: christine_addley [at] btinternet.com<br>
+					<i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: <span id="addr"> christine.a.addley [at] btinternet.com </span> <br>
 				</div>
 				<p>Please get in touch if you wish to visit the workshop or discuss a project:</p>
-				<form action="/action_page.php" target="_blank">
+				<form id="formaction" action="/action_page.php" target="_blank">
 					<div class="w3-row-padding" style="margin:0 -16px 8px -16px">
 						<div class="w3-half">
 							<input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
@@ -336,7 +372,18 @@
 		<a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
 			<p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
 	</footer>
-	 
+
+	<script>
+		function accordion(id) {
+			    var x = document.getElementById(id);
+			    if (x.className.indexOf("w3-show") == -1) {
+						        x.className += " w3-show";
+						    } else { 
+									        x.className = x.className.replace(" w3-show", "");
+									    }
+		}
+	</script>
+ 
 	<!-- Add Google Maps -->
 	<script>
 	// Modal Image Gallery
@@ -368,6 +415,13 @@
 			}
 	}
 	</script>
+	<script>
+		var addr = 'christine.a.addley' + '@' + 'btinternet' + '.' + 'com';
+		var contactform =  document.getElementById('formaction');
+    var mailfield = document.getElementById('addr'); 
+		contactform.setAttribute('action', '//formspree.io/' + addr);
+		mailfield.innerHTML = addr;
 
+	</script>
 	</body>
 </html>
