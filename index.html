@@ -7,57 +7,14 @@
 		<meta name="keywords" content="Seating, Caning, Medallion, Loom cane, Sunrise Cane, Blind caning, Double caning, Woven cane, Rushwork, Rushing, Rush-seating, Rush, Rushes, Upholstery, Chair, Armchair, Stool, Sofa, Classes, Teaching, North Yorkshire, Yorkshire,  Malton, Leavening, York">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="icon" type="image/png" href="favicon.png">	
-		<link rel="stylesheet" href="./w3css/4/w3.css">
+		<link rel="stylesheet" href="css/4/w3.css">
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-		<!--link rel="stylesheet" href="./css/app.css"-->
+		<link rel="stylesheet" href="./css/app.css">
 	  <script type="text/javascript" src="js/app.js" defer></script>
 	
-		<style>
-		body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
-		body, html {
-				height: 100%;
-				color: #777;
-				line-height: 1.8;
-		}
-
-		/* Create a Parallax Effect */
-		.bgimg-1, .bgimg-2, .bgimg-3 {
-				background-attachment: fixed;
-				background-position: center;
-				background-repeat: no-repeat;
-				background-size: cover;
-		}
-
-		/* First image (Logo. Full height) */
-		.bgimg-1 {
-				background-image: url('images/bk_rush.png');
-				min-height: 100%;
-		}
-
-		/* Second image (Portfolio) */
-		.bgimg-2 {
-				background-image: url("images/bk_working.png");
-				min-height: 400px;
-		}
-
-		/* Third image (Contact) */
-		.bgimg-3 {
-				background-image: url("images/bk_cane.png");
-				min-height: 400px;
-		}
-
-		.w3-wide {letter-spacing: 10px;}
-		.w3-hover-opacity {cursor: pointer;}
-
-		/* Turn off parallax scrolling for tablets and phones */
-		@media only screen and (max-device-width: 1024px) {
-				.bgimg-1, .bgimg-2, .bgimg-3 {
-						background-attachment: scroll;
-				}
-		}
-		</style>
 </head>
+
 <body>
 
 	<!-- Navbar (sit on top) -->
@@ -71,9 +28,6 @@
 			<a href="#services" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-list"></i> SERVICES </a>
 			<a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PORTFOLIO</a>
 			<a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
-			<!--<a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
-				<i class="fa fa-search"></i>
-			</a>-->
 		</div>
 
 		<!-- Navbar on small screens -->
@@ -82,7 +36,6 @@
 			<a href="#services" class="w3-bar-item w3-button" onclick="toggleFunction()">SERVICES</a>
 			<a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
 			<a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
-			<!--<a href="#" class="w3-bar-item w3-button">SEARCH</a>-->
 		</div>
 	</div>
 
@@ -166,7 +119,7 @@ I began re-seating chairs professionally in 1978, initially with cane. Later I l
 			<p class="w3-half w3-padding-small w3-hover-grey" onclick="accordion('demoinfo')">	Live demonstrations
 		</p> 
 				<div id="demoinfo" class="w3-container w3-hide">
-								<p>I give live demonstrations of various different techniiques at shows, large and small. </p>
+								<p>I give live demonstrations of various different techniques at shows, large and small. </p>
 				</div>
 		</div>	
 		</div>	
@@ -179,12 +132,12 @@ I began re-seating chairs professionally in 1978, initially with cane. Later I l
 		</div>
 	</div>
 
-	<!-- Container (Portfolio Section) -->
+	<!-- Portfolio Section -->
 	<div class="w3-content w3-container w3-padding-64" id="portfolio">
 		<h3 class="w3-center">MY WORK</h3>
 		<p class="w3-center"><em>Here are some of my previous projects. (Click on the images to make them bigger)</em></p>
 
-		<!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+		<!-- Responsive Grid. -->
 		<div class=" w3-center">
 			
 			<div class="w3-col m3 w3-hover-opacity w3-padding-small" onclick="openModal('images/small_stool.jpg','Woven caning on a mahogany stool')"  >
@@ -195,7 +148,6 @@ I began re-seating chairs professionally in 1978, initially with cane. Later I l
 				<img src="images/p5.jpg" style="width:100%" alt="Thumbnail of rushwork armchair">
 			</div>
 
-
 			<div class="w3-col m3 w3-hover-opacity w3-padding-small" onclick="openModal('images/firescreen.jpg','Woven cane firescreen.')">
 				<img src="images/p3.jpg" style="width:100%" alt="Thumbnail of caned firescreen">
 			</div>
@@ -204,27 +156,25 @@ I began re-seating chairs professionally in 1978, initially with cane. Later I l
 				<img src="images/p4.jpg" style="width:100%" alt="Seagrass stool">
 			</div>
 
-
 		</div>
 
 		<div class="w3-center w3-section">
 
 			<div class="w3-col m3 w3-hover-opacity w3-padding-small" onclick="openModal('images/victorian_sofa.jpg','Upholstered Victorian sofa')">
 				<img src="images/p7.jpg" style="width:100%" alt="Thumbnail of upholstered sofa">
-			</div>
+				</div>
 
-	<div class="w3-col m3 w3-hover-opacity w3-padding-small" onclick="openModal('images/rush_stool.jpg','Child\'s rushwork chair.')">
+			<div class="w3-col m3 w3-hover-opacity w3-padding-small" onclick="openModal('images/rush_stool.jpg','Child\'s rushwork chair.')">
 				<img src="images/p2.jpg" style="width:100%" alt="Rushwork chair">
-		</div>
+				</div>
 
-		<div class="w3-col m3 w3-hover-opacity w3-padding-small" onclick="openModal('images/danish_cord_chair.jpg','Danish cord chair')"  >
+			<div class="w3-col m3 w3-hover-opacity w3-padding-small" onclick="openModal('images/danish_cord_chair.jpg','Danish cord chair')"  >
 				<img src="images/p6.jpg" style="width:100%" alt="Thumbnail of danish cord chair">
-		</div>
-
+				</div>
 
 			<div class="w3-col m3 w3-hover-opacity w3-padding-small" onclick="openModal('images/fan_back_chair.jpg','Caned chair with fanned back.')"  >
 				<img src="images/p8.jpg" style="width:100%" alt="Thumbnail of caned fan-back chair">
-			</div>
+				</div>
 
 		</div>
 	</div>
@@ -235,7 +185,7 @@ I began re-seating chairs professionally in 1978, initially with cane. Later I l
 		</div>
 	</div>
 
-	<!-- Container (Contact Section) -->
+	<!-- Contact Section -->
 	<div class="w3-content w3-container w3-padding-64" id="contact">
 		<h3 class="w3-center">WHERE I WORK</h3>
 		<p class="w3-center"><em>I do most of my work at my Ryedale workshop in Leavening, North Yorkshire.</em></p>
@@ -282,7 +232,6 @@ I began re-seating chairs professionally in 1978, initially with cane. Later I l
 				</div>
 			</div>
 		</div>
-
 
 	</body>
 </html>
