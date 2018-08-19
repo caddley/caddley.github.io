@@ -7,10 +7,12 @@
 		<meta name="keywords" content="Seating, Caning, Medallion, Loom cane, Sunrise Cane, Blind caning, Double caning, Woven cane, Rushwork, Rushing, Rush-seating, Rush, Rushes, Upholstery, Chair, Armchair, Stool, Sofa, Classes, Teaching, North Yorkshire, Yorkshire,  Malton, Leavening, York">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="icon" type="image/png" href="favicon.png">	
-		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+		<link rel="stylesheet" href="./w3css/4/w3.css">
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+		<!--link rel="stylesheet" href="./css/app.css"-->
+	  <script type="text/javascript" src="js/app.js" defer></script>
+	
 		<style>
 		body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
 		body, html {
@@ -356,45 +358,6 @@ I began re-seating chairs professionally in 1978, initially with cane. Later I l
 			<p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
 	</footer>
 
-	<script>
-	function accordion(id) {
-		var x = document.getElementById(id);
-		if (x.className.indexOf("w3-show") == -1) {
-			x.className += " w3-show";
-		} 
-		else { 
-				x.className = x.className.replace(" w3-show", "");
-		}
-	}
 
-	// Change style of navbar on scroll
-	window.onscroll = function() {navStyle()};
-	function navStyle() {
-			var navbar = document.getElementById("myNavbar");
-			if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-					navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
-			} else {
-					navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
-			}
-	}
-
-	// Used to toggle the menu on small screens when clicking on the menu button
-	function toggleFunction() {
-			var x = document.getElementById("navBar");
-			if (x.className.indexOf("w3-show") == -1) {
-					x.className += " w3-show";
-			} else {
-					x.className = x.className.replace(" w3-show", "");
-			}
-	}
-	</script>
-	<script>
-		var addr = 'christine.a.addley' + '@' + 'btinternet' + '.' + 'com';
-		var contactform =  document.getElementById('formaction');
-    var mailfield = document.getElementById('addr'); 
-		contactform.setAttribute('action', '//formspree.io/' + addr);
-		mailfield.innerHTML = addr;
-
-	</script>
 	</body>
 </html>
