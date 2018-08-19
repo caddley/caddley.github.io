@@ -103,17 +103,9 @@
 		<h3 class="w3-center">ABOUT ME</h3>
 		<p class="w3-center"><em>A chair seater with over forty years of experience in caning, rushwork and upholstery.</em></p>
 		<div class="w3-padding-small w3-third">		
-		<img src="images/christine.jpg" class="w3-round w3-image w3-hover-opacity" alt="Photo of me with caned medallion chair" onclick="document.getElementById('id00').style.display='block'"   >
-		<div id="id00" class="w3-modal">
-				<div class="w3-modal-content">
-					<div class="w3-center w3-container w3-black w3-padding-16">
-					<span onclick="document.getElementById('id00').style.display='none'" class="w3-button w3-display-topright">&times;</span>
-					<img src="images/christine.jpg"  style="width:100%" alt="Photo of Christine with caned medallion chair">
-					<p>Christine working on a caned chair with a medallion.</p>
-					</div>
-				</div>
-			</div>
+		<img src="images/christine.jpg" class="w3-round w3-image w3-hover-opacity" alt="Photo of me with caned medallion chair" onclick="openModal('images/christine.jpg','Christine working on a caned chair with a medallion.')"   >
 		</div>
+
 		<p class="w3-rest w3-padding-small">
 I began re-seating chairs professionally in 1978, initially with cane. Later I learned rush seating at Dr. Bernard (Bill) Cotton’s restoration workshop near Lechlade. My work over the years has included chairs of all shapes and sizes from important antique pieces to simple cottage chairs. I give talks to groups and demonstrate re-seating at local shows and museums. Recently I was invited to take part in the Martino Gamper Post Forma Exhibition at the Yorkshire Sculpture Triangle, demonstrating at three of the four venues. I have a City and Guilds qualification in Upholstery and a Teaching Certificate. The certificate allowed me to teach City and Guilds upholstery at Askham Bryan College, and also caning and upholstery at Local Authority evening classes.
 			</p>
@@ -195,60 +187,21 @@ I began re-seating chairs professionally in 1978, initially with cane. Later I l
 		<!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
 		<div class=" w3-center">
 			
-			<div class="w3-col m3 w3-hover-opacity w3-padding-small" onclick="document.getElementById('id01').style.display='block'"  >
+			<div class="w3-col m3 w3-hover-opacity w3-padding-small" onclick="openModal('images/small_stool.jpg','Woven caning on a mahogany stool')"  >
 				<img src="images/p1.jpg" style="width:100%" alt="Thumbnail of caned stool">
 			</div>
-
-			<div id="id01" class="w3-modal">
-				<div class="w3-modal-content">
-					<div class="w3-container w3-black  w3-padding-16">
-					<span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright">&times;</span>
-					<img src="images/small_stool.jpg"  style="width:100%" alt="Caned Stool">
-					<p>Woven caning on mahogany stool.</p>
-					</div>
-				</div>
-			</div>
 		
-			<div class="w3-col m3 w3-hover-opacity w3-padding-small" onclick="document.getElementById('id02').style.display='block'"  >
+			<div class="w3-col m3 w3-hover-opacity w3-padding-small" onclick="openModal('images/arts_and_crafts_chair.jpg','Rush-seated arts and crafts armchair')"  >
 				<img src="images/p5.jpg" style="width:100%" alt="Thumbnail of rushwork armchair">
 			</div>
 
-			<div id="id02" class="w3-modal">
-				<div class="w3-modal-content ">
-					<div class="w3-container w3-black w3-padding-16">
-					<span onclick="document.getElementById('id02').style.display='none'" class="w3-button w3-display-topright">&times;</span>
-					<img src="images/arts_and_crafts_chair.jpg"  style="width:100%" alt="Rushwork armchair">
-					<p>Rush-seated arts and crafts armchair.</p>
-					</div>
-				</div>
-			</div>
 
-			<div class="w3-col m3 w3-hover-opacity w3-padding-small" onclick="document.getElementById('id03').style.display='block'"  >
+			<div class="w3-col m3 w3-hover-opacity w3-padding-small" onclick="openModal('images/firescreen.jpg','Woven cane firescreen.')">
 				<img src="images/p3.jpg" style="width:100%" alt="Thumbnail of caned firescreen">
 			</div>
 
-			<div id="id03" class="w3-modal">
-				<div class="w3-modal-content">
-					<div class="w3-container w3-black w3-padding-16 ">
-					<span onclick="document.getElementById('id03').style.display='none'" class="w3-button w3-display-topright">&times;</span>
-					<img src="images/firescreen.jpg"  style="width:100%" alt="Caned firescreen">
-					<p>Woven cane firescreen.</p>
-					</div>
-				</div>
-			</div>
-
-			<div class="w3-col m3 w3-hover-opacity w3-padding-small" onclick="document.getElementById('id04').style.display='block'"  >
+			<div class="w3-col m3 w3-hover-opacity w3-padding-small" onclick="openModal('images/seagrass_stool.jpg','Seagrass beech stool')">
 				<img src="images/p4.jpg" style="width:100%" alt="Seagrass stool">
-			</div>
-
-			<div id="id04" class="w3-modal">
-				<div class="w3-modal-content">
-					<div class="w3-container w3-black w3-padding-16 ">
-					<span onclick="document.getElementById('id04').style.display='none'" class="w3-button w3-display-topright">&times;</span>
-					<img src="images/seagrass_stool.jpg"  style="width:100%" alt="Seagrass stool" >
-					<p>Seagrass beech stool.</p>
-					</div>
-				</div>
 			</div>
 
 
@@ -256,60 +209,21 @@ I began re-seating chairs professionally in 1978, initially with cane. Later I l
 
 		<div class="w3-center w3-section">
 
-			<div class="w3-col m3 w3-hover-opacity w3-padding-small" onclick="document.getElementById('id05').style.display='block'"  >
+			<div class="w3-col m3 w3-hover-opacity w3-padding-small" onclick="openModal('images/victorian_sofa.jpg','Upholstered Victorian sofa')">
 				<img src="images/p7.jpg" style="width:100%" alt="Thumbnail of upholstered sofa">
 			</div>
 
-			<div id="id05" class="w3-modal">
-				<div class="w3-modal-content">
-					<div class="w3-container w3-black w3-padding-16 ">
-					<span onclick="document.getElementById('id05').style.display='none'" class="w3-button w3-display-topright">&times;</span>
-					<img src="images/victorian_sofa.jpg"  style="width:100%" alt="Upholstered Victorian sofa" >
-					<p>Upholstered Victorian sofa.</p>
-					</div>
-				</div>
-			</div>
-
-	<div class="w3-col m3 w3-hover-opacity w3-padding-small" onclick="document.getElementById('id06').style.display='block'"  >
+	<div class="w3-col m3 w3-hover-opacity w3-padding-small" onclick="openModal('images/rush_stool.jpg','Child\'s rushwork chair.')">
 				<img src="images/p2.jpg" style="width:100%" alt="Rushwork chair">
 		</div>
 
-			<div id="id06" class="w3-modal">
-				<div class="w3-modal-content">
-					<div class="w3-container w3-black  w3-padding-16 ">
-					<span onclick="document.getElementById('id06').style.display='none'" class="w3-button w3-display-topright">&times;</span>
-					<img  src="images/rush_stool.jpg"  style="width:100%" alt="Rushwork chair" >
-					<p>Rushwork child's chair.</p>
-					</div>
-				</div>
-			</div>
-
-	<div class="w3-col m3 w3-hover-opacity w3-padding-small" onclick="document.getElementById('id07').style.display='block'"  >
+		<div class="w3-col m3 w3-hover-opacity w3-padding-small" onclick="openModal('images/danish_cord_chair.jpg','Danish cord chair')"  >
 				<img src="images/p6.jpg" style="width:100%" alt="Thumbnail of danish cord chair">
 		</div>
 
-			<div id="id07" class="w3-modal">
-				<div class="w3-modal-content">
-					<div class="w3-container w3-black  w3-padding-16 ">
-					<span onclick="document.getElementById('id07').style.display='none'" class="w3-button w3-display-topright">&times;</span>
-					<img src="images/danish_cord_chair.jpg"  style="width:100%" alt="Danish cord chair" >
-					<p>Danish cord chair.</p>
-					</div>
-				</div>
-			</div>
 
-	<div class="w3-col m3 w3-hover-opacity w3-padding-small" onclick="document.getElementById('id08').style.display='block'"  >
+			<div class="w3-col m3 w3-hover-opacity w3-padding-small" onclick="openModal('images/fan_back_chair.jpg','Caned chair with fanned back.')"  >
 				<img src="images/p8.jpg" style="width:100%" alt="Thumbnail of caned fan-back chair">
-		</div>
-
-			<div id="id08" class="w3-modal">
-				<div class="w3-modal-content">
-					<div class="w3-container w3-black  w3-padding-16 ">
-					<span onclick="document.getElementById('id08').style.display='none'" class="w3-button w3-display-topright">&times;</span>
-					<img src="images/fan_back_chair.jpg"  style="width:100%" alt="Caned fanned back chair" >
-					<p>Caned chair with fanned back.</p>
-					</div>
-				</div>
 			</div>
 
 		</div>
@@ -357,6 +271,17 @@ I began re-seating chairs professionally in 1978, initially with cane. Later I l
 		<a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
 			<p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
 	</footer>
+
+	<div id="modaldiv" class="w3-modal">
+			<div class="w3-modal-content">
+					<div class="w3-center w3-container w3-black w3-padding-16">
+					<span onclick="document.getElementById('modaldiv').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+					<img id="modalimg" src=""  style="width:100%" alt="Photo of Christine with caned medallion chair">
+					<p id="modalcap" >.</p>
+					</div>
+				</div>
+			</div>
+		</div>
 
 
 	</body>
