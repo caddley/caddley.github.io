@@ -9,11 +9,16 @@ function openModal(image, caption){
 
 function accordion(id) {
 	var x = document.getElementById(id);
-	if (x.className.indexOf("w3-show") == -1) {
-		x.className += " w3-show";
+	var chev = x.querySelector(".fa");
+	var info = x.querySelector(".w3-container"); 
+	if (info.className.indexOf("w3-show") == -1) {
+		info.className += " w3-show";
+		chev.className = "fa fa-chevron-down";
 	} 
 	else { 
-			x.className = x.className.replace(" w3-show", "");
+		info.className = info.className.replace(" w3-show", "");
+		chev.className = "fa fa-chevron-right";
+		
 	}
 }
 
